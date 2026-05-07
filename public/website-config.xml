@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<website_config>
+    <branding>
+        <logo>
+            <use_image_logo>true</use_image_logo>
+            <text_main>Michael Morra DMD</text_main>
+            <text_sub>General Dentistry</text_sub>
+            <icon>Calendar</icon>
+            <image_url>images/logo.png</image_url>            
+        </logo>
+        <colors>
+            <primary>#2F4F4F</primary>
+            <secondary>#FF944E</secondary>
+            <accent_blue>#407BFF</accent_blue>
+            <dark_navy>#1A242F</dark_navy>
+            <light_bg>#F8FAFC</light_bg>
+        </colors>
+        <calendly_url>https://calendly.com/andres-jasperdesign/30min</calendly_url>
+    </branding>
+
+    <contact_info>
+        <phone_main>(+01) 407-351-3311</phone_main>
+        <email>Smile@DrLisaY.com</email>
+        <address>5956 Turkey Lake Rd, Suite 2 Orlando, FL, United States, Florida 32819</address>
+        <working_hours>Mon to Sat 9:00AM to 9:00PM</working_hours>
+        <social_links>
+            <facebook>#</facebook>
+            <instagram>#</instagram>
+            <youtube>#</youtube>
+            <twitter>#</twitter>
+        </social_links>
+    </contact_info>
+
+    <navigation>
+        <link name="Home" path="/"/>
+        <link name="About" path="/about"/>
+        <link name="Services" path="/services"/>
+        <link name="Gallery" path="/gallery"/>
+        <link name="Contact" path="/contact"/>
+    </navigation>
+
+    <sections>
+        <hero>
+            <title>Experience Dental Excellence with a Gentle Touch</title>
+            <description>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal</description>
+            <button_text>Make An Appointment</button_text>
+            <google_rating>5.0</google_rating>
+            <review_count>492 Reviews</review_count>
+            <image_main>https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&amp;fit=crop&amp;q=80&amp;w=1000&amp;h=1000</image_main>
+            <doctor_name>Dr. Lisa Yurkiewicz</doctor_name>
+            <doctor_role>Dentist</doctor_role>
+            <doctor_avatar>images/doctor-avatar.png</doctor_avatar>
+        </hero>
+
+        <info_bar>
+            <contact_text>Need Dental Services?</contact_text>
+            <phone>(+01) 987 828 745</phone>
+            <hours_label>Opening Hours</hours_label>
+            <hours_value>Mon to Sat 9:00AM to 9:00PM</hours_value>
+            <button_text>Make An Appointment</button_text>
+        </info_bar>
+
+        <about>
+            <tagline>About Us</tagline>
+            <title>Your Journey to a Healthier Smile Begins Here</title>
+            <description>The goal of our clinic is to provide friendly, caring dentistry and the highest level of general, cosmetic, and advanced dental treatments. With dental practice throughout the world.</description>
+            <years_experience>15+</years_experience>
+            <images>
+                <image>https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&amp;fit=crop&amp;q=80&amp;w=600&amp;h=800</image>
+                <image>https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&amp;fit=crop&amp;q=80&amp;w=600&amp;h=400</image>
+                <image>https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&amp;fit=crop&amp;q=80&amp;w=600&amp;h=400</image>
+            </images>
+            <features>
+                <feature>Experienced Team</feature>
+                <feature>Comprehensive Services</feature>
+                <feature>State-Of-The-Art Technology</feature>
+                <feature>Emergency Dental Services</feature>
+            </features>
+            <button_text>Read More About Us</button_text>
+        </about>
+
+        <services>
+            <tagline>Our Services</tagline>
+            <title>High Quality Services for You</title>
+            <items>
+                <service id="general-dental-care" icon="Stethoscope">
+                    <title>General Dental Care</title>
+                    <description>We are excited to meet you and provide the best dental care for your family.</description>
+                </service>
+                <service id="dental-implants" icon="Activity">
+                    <title>Dental Implants</title>
+                    <description>Our team loves dental trivia. Did you know that tooth enamel.</description>
+                </service>
+                <service id="cosmetic-dentistry" icon="Smile">
+                    <title>Cosmetic Dentistry</title>
+                    <description>We are excited to meet you and provide the best dental care for your family.</description>
+                </service>
+                <service id="teeth-whitening" icon="Sparkles">
+                    <title>Teeth Whitening</title>
+                    <description>We are excited to meet you and provide the best dental care for your family.</description>
+                </service>
+            </items>
+        </services>
+
+        <video_promo>
+            <tagline>Visit Clinic</tagline>
+            <title>Comprehensive Dental Care For All Ages</title>
+            <button_text>Play Video</button_text>
+            <video_url>https://www.youtube.com/embed/whWPO1Ms_zU?si=e9dXJ5jY4lEyQuRA</video_url>
+            <thumbnail>https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&amp;fit=crop&amp;q=80&amp;w=1600&amp;h=800</thumbnail>
+        </video_promo>
+
+        <diagnosis>
+            <tagline>WHY CHOOSE US</tagline>
+            <title>Diagnosis of Dental Diseases</title>
+            <description>We are committed to sustainability, eco-friendly initiatives.</description>
+            <tooth_image>images/tooth.webp</tooth_image>
+            <features>
+                <feature icon="Users" title="Experienced Doctor" description="The goal of our clinic is to provide friendly, caring dentistry and the."/>
+                <feature icon="Heart" title="Personalized Care" description="The goal of our clinic is to provide friendly, caring dentistry and the."/>
+                <feature icon="CreditCard" title="Flexible Payment Options" description="The goal of our clinic is to provide friendly, caring dentistry and the."/>
+                <feature icon="Clock" title="Emergency Services" description="The goal of our clinic is to provide friendly, caring dentistry and the."/>
+                <feature icon="Star" title="Positive Patient Reviews" description="The goal of our clinic is to provide friendly, caring dentistry and the."/>
+                <feature icon="Cpu" title="Latest Technology" description="The goal of our clinic is to provide friendly, caring dentistry and the."/>
+            </features>
+        </diagnosis>
+
+        <stats>
+            <stat label="Insurance Covered" value="75+" description="Our team loves dental trivia. Did you know that tooth enamel."/>
+            <stat label="Realized Projects" value="2K" description="Our team loves dental trivia. Did you know that tooth enamel."/>
+            <stat label="Happy Customers" value="22K" description="Our team loves dental trivia. Did you know that tooth enamel."/>
+            <stat label="Experience Doctors" value="18+" description="Our team loves dental trivia. Did you know that tooth enamel."/>
+        </stats>
+
+        <before_after>
+            <tagline>Before and after teeth whitening</tagline>
+            <title>Get a Hollywood Smile Today!</title>
+            <description_main>Sed elementum tortor sit amet lacus feugiat aliquam eu euismod dui, sit finibus neque quam nisl, euismod vitae sem in, tempor auctor nulla facilisis in aliquam laoreet semper quam per inceptos.</description_main>
+            <description_sub>Amet lacus feugiat aliquam eu euismod dui, sit amet finibus neque quam nisl euismod vitae sem tempor.</description_sub>
+            <doctor_name>Dr. John Boss</doctor_name>
+            <image_before>images/teeth_before.jpg</image_before>
+            <image_after>images/teeth_after.jpg</image_after>
+        </before_after>
+
+        <process_accordion>
+            <tagline>How It Works</tagline>
+            <title>What We Do for Your Teeth</title>
+            <description>We are committed to sustainability, Our clinic practices eco-friendly initiatives like digital records to reduce paper waste and energy-efficient equipment.</description>
+            <image>https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&amp;fit=crop&amp;q=80&amp;w=800&amp;h=1000</image>
+            <items>
+                <item icon="Calendar" title="Book An Appointment" content="The goal of our clinic is to provide friendly, caring dentistry and the highest level of general, cosmetic, ents."/>
+                <item icon="Heart" title="What Conditions Can Manual Therapy Treat?" content="The goal of our clinic is to provide friendly, caring dentistry and the highest level of general, cosmetic, ents."/>
+                <item icon="Star" title="Expert Care" content="The goal of our clinic is to provide friendly, caring dentistry and the highest level of general, cosmetic, ents."/>
+            </items>
+        </process_accordion>
+
+        <team>
+            <tagline>Our Team</tagline>
+            <title>Our Friendly Dentists Team</title>
+            <description>We are committed to sustainability, eco-friendly initiatives.</description>
+            <members>
+                <member id="1" name="Dr. Johan Joe" specialty="Lead Dentist" experience="15+" patients="2k+" image="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&amp;fit=crop&amp;q=80&amp;w=400&amp;h=400"/>
+                <member id="2" name="Dr. Alice Johnson" specialty="Senior Dentist" experience="12+" patients="1.5k+" image="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&amp;fit=crop&amp;q=80&amp;w=400&amp;h=400"/>
+                <member id="3" name="Dr. Alison Banson" specialty="Orthodontist" experience="10+" patients="1.2k+" image="https://images.unsplash.com/photo-1659353888906-adb3e0041693?auto=format&amp;fit=crop&amp;q=80&amp;w=400&amp;h=400"/>
+                <member id="4" name="Dr. Christopher Case" specialty="Periodontist" experience="18+" patients="3k+" image="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&amp;fit=crop&amp;q=80&amp;w=400&amp;h=400"/>
+            </members>
+        </team>
+
+        <testimonials>
+            <tagline>Testimonials</tagline>
+            <title>Some Heart to Heart Feedback.</title>
+            <rating>4.7/5</rating>
+            <rating_desc>This rate is given by user after visiting our location</rating_desc>
+            <image_main>https://images.unsplash.com/photo-1681939282781-341ac4f61996?auto=format&amp;fit=crop&amp;q=80&amp;w=800&amp;h=1000</image_main>
+            <items>
+                <testimonial id="1" name="Robert Lee" role="Software Engineer" rating="4.7" avatar="https://i.pravatar.cc/100?u=robert">
+                    <content>I want to say thank you to my doctor Steve! Vivamus sagittis massa vitae bibendum rhoncus. Duis cursus. Thank you for helping me overcome my fear of the dentist! Vivamus sagittis massa vitae bibendum rhoncus. Duis cursus.</content>
+                </testimonial>
+                <testimonial id="2" name="Sarah Jenkins" role="Marketing Director" rating="5.0" avatar="https://i.pravatar.cc/100?u=sarah">
+                    <content>The best dental experience I've ever had. The staff was incredibly professional and the treatment was completely painless. Highly recommend to anyone looking for quality care.</content>
+                </testimonial>
+                <testimonial id="3" name="Michael Chen" role="Architecture Student" rating="4.9" avatar="https://i.pravatar.cc/100?u=michael">
+                    <content>State-of-the-art facilities and a very welcoming atmosphere. Dr. Lee explained everything clearly and made me feel at ease throughout my entire root canal procedure.</content>
+                </testimonial>
+            </items>
+        </testimonials>
+
+        <blog>
+            <tagline>Latest News</tagline>
+            <title>Our Latest Direct Health Blog.</title>
+            <description>We are committed to sustainability, eco-friendly initiatives.</description>
+            <items>
+                <post id="1" category="Dental Tips" date="March 15, 2024" image="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&amp;fit=crop&amp;q=80&amp;w=600&amp;h=400">
+                    <title>The Importance Of Regular Dental Check-Ups</title>
+                    <excerpt>Our waiting room features a variety of plants that help purify the air.</excerpt>
+                </post>
+                <post id="2" category="Whitening" date="March 10, 2024" image="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&amp;fit=crop&amp;q=80&amp;w=600&amp;h=400">
+                    <title>Top 5 Benefits Of Professional Teeth Whitening</title>
+                    <excerpt>We believe in promoting health and wellness in every aspect of our clinic.</excerpt>
+                </post>
+                <post id="3" category="Implants" date="March 05, 2024" image="https://images.unsplash.com/photo-1600170311833-c2cf5280ce49?auto=format&amp;fit=crop&amp;q=80&amp;w=600&amp;h=400">
+                    <title>Understanding Dental Implants: What You Need To Know</title>
+                    <excerpt>Our clinic donates dental care services to underprivileged families.</excerpt>
+                </post>
+            </items>
+        </blog>
+
+        <faq>
+            <tagline>Common Questions</tagline>
+            <title>Frequently Asked Questions</title>
+            <image>https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&amp;fit=crop&amp;q=80&amp;w=800&amp;h=800</image>
+            <items>
+                <item q="Do you accept insurance?" a="Yes, we accept most major PPO dental insurance plans. Our team can help you verify your coverage and maximize your benefits during your first visit."/>
+                <item q="Is dental treatment painful?" a="We prioritize patient comfort above all else. We use modern anesthesia and gentle techniques to ensure your treatment is as comfortable and pain-free as possible."/>
+                <item q="Do you offer emergency dental care?" a="Absolutely. We offer same-day emergency appointments for trauma, severe pain, or any urgent dental concerns."/>
+                <item q="How often should I visit the dentist?" a="For most patients, we recommend a professional cleaning and exam every six months to maintain optimal oral health and prevent problems before they start."/>
+            </items>
+        </faq>
+
+        <cta_banner>
+            <title>We Are Accepting New Patients</title>
+            <highlight>New Patients</highlight>
+            <description>Don't wait for dental pain to start. Schedule your comprehensive oral exam and experience modern, gentle dentistry.</description>
+            <button_text>Book Appointment</button_text>
+            <phone_label>Emergency Call</phone_label>
+            <image>https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&amp;fit=crop&amp;q=80&amp;w=400&amp;h=500</image>
+        </cta_banner>
+
+        <footer>
+            <description>We provide the highest level of general, cosmetic, and specialist dental treatments in New York. Your comfort is our priority.</description>
+            <copyright>Copyright © 2026 Dental Care Clinic. All Rights Reserved.</copyright>
+        </footer>
+    </sections>
+
+    <pages>
+        <about_us>
+            <header_title>About Us</header_title>
+            <mission>
+                <title>Our Mission</title>
+                <description>To provide world-class dental care with a personal touch, ensuring every patient leaves with a confident smile.</description>
+            </mission>
+            <certifications>
+                <title>Certifications</title>
+                <description>Our clinic is certified by leading global dental associations, ensuring the highest safety and treatment standards.</description>
+            </certifications>
+            <story>
+                <title>Our Story</title>
+                <description>Founded in 2010, we have grown from a small family practice to New York's most trusted multi-specialty dental clinic.</description>
+            </story>
+        </about_us>
+
+        <gallery>
+            <header_title>Gallery</header_title>
+            <transformations_title>Patient Transformations</transformations_title>
+            <items>
+                <image title="Modern Equipment">https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&amp;fit=crop&amp;q=80&amp;w=800&amp;h=600</image>
+                <image title="Office Interior">https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&amp;fit=crop&amp;q=80&amp;w=800&amp;h=600</image>
+                <image title="Consultation Room">https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&amp;fit=crop&amp;q=80&amp;w=800&amp;h=600</image>
+                <image title="Our Doctors">https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&amp;fit=crop&amp;q=80&amp;w=800&amp;h=600</image>
+                <image title="Treatment Success">https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&amp;fit=crop&amp;q=80&amp;w=800&amp;h=600</image>
+                <image title="Dental Lab">https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&amp;fit=crop&amp;q=80&amp;w=800&amp;h=600</image>
+                <image title="Patient Care">https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&amp;fit=crop&amp;q=80&amp;w=800&amp;h=600</image>
+                <image title="Advanced Technology">https://images.unsplash.com/photo-1581056771107-24ca5f033842?auto=format&amp;fit=crop&amp;q=80&amp;w=800&amp;h=600</image>
+            </items>
+            <transformations>
+                <case title="Cosmetic Success Case #1">
+                    <before>https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&amp;fit=crop&amp;q=80&amp;w=400&amp;h=300</before>
+                    <after>https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&amp;fit=crop&amp;q=80&amp;w=400&amp;h=300</after>
+                </case>
+                <case title="Cosmetic Success Case #2">
+                    <before>https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&amp;fit=crop&amp;q=80&amp;w=400&amp;h=300</before>
+                    <after>https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&amp;fit=crop&amp;q=80&amp;w=400&amp;h=300</after>
+                </case>
+            </transformations>
+        </gallery>
+
+        <services>
+            <header_title>Our Services</header_title>
+        </services>
+
+        <contact>
+            <header_title>Contact Us</header_title>
+        </contact>
+    </pages>
+</website_config>
