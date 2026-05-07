@@ -3,13 +3,13 @@
     <branding>
         <logo>
             <use_image_logo>true</use_image_logo>
-            <text_main>Michael Morra DMD</text_main>
+            <text_main>Dr. Lisa Yurkiewicz</text_main>
             <text_sub>General Dentistry</text_sub>
             <icon>Calendar</icon>
             <image_url>images/logo.png</image_url>            
         </logo>
         <colors>
-            <primary>#2F4F4F</primary>
+            <primary>#2E73BA</primary>
             <secondary>#FF944E</secondary>
             <accent_blue>#407BFF</accent_blue>
             <dark_navy>#1A242F</dark_navy>
