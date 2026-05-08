@@ -40,18 +40,18 @@ const Header = () => {
           <img 
             src={resolveImageUrl(branding.logo.imageUrl || 'images/logo.png')} 
             alt="Logo" 
-            className={`${isMobile ? 'h-8' : 'h-10 lg:h-12'} w-auto object-contain`} 
+            className={`${isMobile ? 'h-8' : 'h-10 lg:h-[60px]'} w-auto object-contain`} 
           />
         ) : (
           <>
-            <div className={`${isMobile ? 'w-8 h-8 text-base' : 'w-10 h-10 text-2xl'} bg-primary rounded-xl flex items-center justify-center text-white font-display font-black shadow-lg shadow-primary/20 transition-transform hover:scale-110`}>
+            <div className={`${isMobile ? 'w-8 h-8 text-base' : 'w-10 h-10 lg:w-[60px] lg:h-[60px] text-2xl lg:text-3xl'} bg-primary rounded-xl flex items-center justify-center text-white font-display font-black shadow-lg shadow-primary/20 transition-transform hover:scale-110`}>
               {branding.logo.textMain.charAt(0)}
             </div>
             <div className="flex flex-col -gap-1">
-              <span className={`${isMobile ? 'text-lg' : 'text-xl lg:text-2xl'} font-display font-black text-dark-navy leading-none tracking-tight`}>
+              <span className={`${isMobile ? 'text-lg' : 'text-xl lg:text-3xl'} font-display font-black text-dark-navy leading-none tracking-tight`}>
                 {branding.logo.textMain}
               </span>
-              <span className={`${isMobile ? 'text-[8px]' : 'text-[10px]'} font-display font-bold text-primary tracking-[0.3em] uppercase leading-none`}>
+              <span className={`${isMobile ? 'text-[8px]' : 'text-[10px] lg:text-xs'} font-display font-bold text-primary tracking-[0.3em] uppercase leading-none`}>
                 {branding.logo.textSub}
               </span>
             </div>

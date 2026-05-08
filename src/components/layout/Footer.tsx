@@ -22,18 +22,18 @@ const Footer = () => {
                 <img 
                   src={resolveImageUrl(branding.logo.imageUrl || 'images/logo.png')} 
                   alt="Logo" 
-                  className="h-10 lg:h-12 w-auto object-contain brightness-0 invert" 
+                  className="h-10 lg:h-[60px] w-auto object-contain brightness-0 invert" 
                 />
               ) : (
                 <>
-                  <div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center text-white font-display font-black text-2xl shadow-lg shadow-primary/20 transition-transform hover:scale-110">
+                  <div className="w-10 h-10 lg:w-[60px] lg:h-[60px] bg-primary rounded-xl flex items-center justify-center text-white font-display font-black text-2xl lg:text-3xl shadow-lg shadow-primary/20 transition-transform hover:scale-110">
                     {branding.logo.textMain.charAt(0)}
                   </div>
                   <div className="flex flex-col -gap-1">
-                    <span className="text-xl lg:text-2xl font-display font-black text-white leading-none tracking-tight">
+                    <span className="text-xl lg:text-3xl font-display font-black text-white leading-none tracking-tight">
                       {branding.logo.textMain}
                     </span>
-                    <span className="text-[10px] font-display font-bold text-primary tracking-[0.3em] uppercase leading-none">
+                    <span className="text-[10px] lg:text-xs font-display font-bold text-primary tracking-[0.3em] uppercase leading-none">
                       {branding.logo.textSub}
                     </span>
                   </div>
