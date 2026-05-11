@@ -33,6 +33,16 @@ const Header = () => {
 
   const Logo = ({ isMobile = false }) => {
     const useImage = branding.logo.useImageLogo === 'true';
+    const configHeight = parseInt(branding.logo.imageHeight || '90');
+    const isShrunk = isScrolled || location.pathname !== '/';
+    
+    const desktopHeight = (!useImage || isShrunk) ? 65 : configHeight;
+    const mobileHeight = 40;
+
+    const logoStyle = {
+      '--desktop-height': `${desktopHeight}px`,
+      '--mobile-height': `${mobileHeight}px`
+    } as React.CSSProperties;
 
     return (
       <Link to="/" className="flex items-center gap-3" onClick={isMobile ? () => setIsOpen(false) : undefined}>
@@ -40,18 +50,22 @@ const Header = () => {
           <img 
             src={resolveImageUrl(branding.logo.imageUrl || 'images/logo.png')} 
             alt="Logo" 
-            className={`${isMobile ? 'h-8' : 'h-10 lg:h-[90px]'} w-auto object-contain`} 
+            style={logoStyle}
+            className={`${isMobile ? 'h-[var(--mobile-height)]' : 'h-[var(--mobile-height)] lg:h-[var(--desktop-height)]'} w-auto object-contain transition-all duration-300`} 
           />
         ) : (
           <>
-            <div className={`${isMobile ? 'w-8 h-8 text-base' : 'w-10 h-10 lg:w-[90px] lg:h-[90px] text-2xl lg:text-5xl'} bg-primary rounded-xl flex items-center justify-center text-white font-display font-black shadow-lg shadow-primary/20 transition-transform hover:scale-110`}>
+            <div 
+              style={logoStyle}
+              className={`${isMobile ? 'h-[var(--mobile-height)] w-[var(--mobile-height)] text-base' : 'h-[var(--mobile-height)] w-[var(--mobile-height)] lg:h-[var(--desktop-height)] lg:w-[var(--desktop-height)] text-2xl lg:text-4xl'} bg-primary rounded-xl flex items-center justify-center text-white font-display font-black shadow-lg shadow-primary/20 transition-all duration-300 hover:scale-110`}
+            >
               {branding.logo.textMain.charAt(0)}
             </div>
             <div className="flex flex-col -gap-1">
-              <span className={`${isMobile ? 'text-lg' : 'text-xl lg:text-5xl'} font-display font-black text-dark-navy leading-none tracking-tight`}>
+              <span className={`${isMobile ? 'text-lg' : 'text-lg lg:text-3xl'} font-display font-black text-dark-navy leading-none tracking-tight transition-all duration-300`}>
                 {branding.logo.textMain}
               </span>
-              <span className={`${isMobile ? 'text-[8px]' : 'text-[10px] lg:text-sm'} font-display font-bold text-primary tracking-[0.3em] uppercase leading-none`}>
+              <span className={`${isMobile ? 'text-[8px]' : 'text-[8px] lg:text-xs'} font-display font-bold text-primary tracking-[0.3em] uppercase leading-none transition-all duration-300`}>
                 {branding.logo.textSub}
               </span>
             </div>

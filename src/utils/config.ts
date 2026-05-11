@@ -10,6 +10,7 @@ export interface WebsiteConfig {
       icon: string;
       imageUrl: string;
       useImageLogo: string;
+      imageHeight: string;
     };
     colors: {
       primary: string;

@@ -10,9 +10,20 @@ const Hero = () => {
   if (loading || !config) return null;
 
   const section = config.sections.hero;
+  const logoHeight = parseInt(config.branding.logo.imageHeight || '90');
+  const useImage = config.branding.logo.useImageLogo === 'true';
+  const desktopLogoHeight = useImage ? logoHeight : 65;
+  
+  const heroStyle = {
+    '--hero-pt': '128px',
+    '--hero-pt-lg': `${desktopLogoHeight + 80}px`
+  } as React.CSSProperties;
 
   return (
-    <section className="relative pt-32 pb-20 overflow-hidden bg-linear-to-b from-primary/5 to-white">
+    <section 
+      style={heroStyle}
+      className="relative pt-[var(--hero-pt)] lg:pt-[var(--hero-pt-lg)] pb-20 overflow-hidden bg-linear-to-b from-primary/5 to-white"
+    >
       {/* Decorative elements */}
       <div className="absolute top-20 left-10 text-primary/10 rotate-12">
         <Star size={40} fill="currentColor" />

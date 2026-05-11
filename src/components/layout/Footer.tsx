@@ -10,6 +10,14 @@ const Footer = () => {
   if (loading || !config) return null;
 
   const { branding, contactInfo, sections, navigation } = config;
+  const logoHeight = parseInt(branding.logo.imageHeight || '90');
+  const useImage = branding.logo.useImageLogo === 'true';
+  const desktopLogoHeight = useImage ? logoHeight : 65;
+
+  const footerLogoStyle = {
+    '--footer-logo-desktop': `${desktopLogoHeight}px`,
+    '--footer-logo-mobile': '70px'
+  } as React.CSSProperties;
 
   return (
     <footer className="bg-dark-navy text-white pt-20 pb-10">
@@ -22,18 +30,22 @@ const Footer = () => {
                 <img 
                   src={resolveImageUrl(branding.logo.imageUrl || 'images/logo.png')} 
                   alt="Logo" 
-                  className="h-10 lg:h-[90px] w-auto object-contain brightness-0 invert" 
+                  style={footerLogoStyle}
+                  className="h-[var(--footer-logo-mobile)] lg:h-[var(--footer-logo-desktop)] w-auto object-contain brightness-0 invert" 
                 />
               ) : (
                 <>
-                  <div className="w-10 h-10 lg:w-[90px] lg:h-[90px] bg-primary rounded-xl flex items-center justify-center text-white font-display font-black text-2xl lg:text-5xl shadow-lg shadow-primary/20 transition-transform hover:scale-110">
+                  <div 
+                    style={footerLogoStyle}
+                    className="h-[var(--footer-logo-mobile)] w-[var(--footer-logo-mobile)] lg:h-[var(--footer-logo-desktop)] lg:w-[var(--footer-logo-desktop)] bg-primary rounded-xl flex items-center justify-center text-white font-display font-black text-2xl lg:text-4xl shadow-lg shadow-primary/20 transition-transform hover:scale-110"
+                  >
                     {branding.logo.textMain.charAt(0)}
                   </div>
                   <div className="flex flex-col -gap-1">
-                    <span className="text-xl lg:text-5xl font-display font-black text-white leading-none tracking-tight">
+                    <span className="text-xl lg:text-3xl font-display font-black text-white leading-none tracking-tight">
                       {branding.logo.textMain}
                     </span>
-                    <span className="text-[10px] lg:text-sm font-display font-bold text-primary tracking-[0.3em] uppercase leading-none">
+                    <span className="text-[10px] lg:text-xs font-display font-bold text-primary tracking-[0.3em] uppercase leading-none">
                       {branding.logo.textSub}
                     </span>
                   </div>
