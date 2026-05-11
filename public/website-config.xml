@@ -6,7 +6,8 @@
             <text_main>Dr. Lisa Yurkiewicz</text_main>
             <text_sub>Orthodontics</text_sub>
             <icon>Calendar</icon>
-            <image_url>images/logo.png</image_url>            
+            <image_url>images/logo.png</image_url>            
+            <image_height>90</image_height>
         </logo>
         <colors>
             <primary>#2E73BA</primary>
